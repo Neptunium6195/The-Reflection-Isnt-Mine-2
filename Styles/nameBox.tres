@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://urd6povkuhjk"]
+
+[ext_resource type="Texture2D" uid="uid://cb8p2d33hk58q" path="res://Assets/nameBox.png" id="1_salp4"]
+
+[resource]
+texture = ExtResource("1_salp4")
+texture_margin_left = 40.0
+texture_margin_top = 15.0
+texture_margin_right = 40.0
+texture_margin_bottom = 15.0

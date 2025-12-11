@@ -1,0 +1,133 @@
+[gd_scene load_steps=9 format=3 uid="uid://bu286yrshtvir"]
+
+[ext_resource type="Texture2D" uid="uid://bow7dgw111tgw" path="res://Assets/floor.jpeg" id="1_v6up3"]
+[ext_resource type="Texture2D" uid="uid://dmqlulmfcdtqr" path="res://Assets/dust.jpg" id="2_bk6nd"]
+[ext_resource type="Texture2D" uid="uid://b73lx8hjvdmoc" path="res://Assets/broom.jpg" id="3_ed20i"]
+[ext_resource type="Script" uid="uid://besjff72cd7qu" path="res://area_2d.gd" id="3_jjaou"]
+[ext_resource type="Script" uid="uid://yp3w2muikvqp" path="res://broom.gd" id="4_7upy8"]
+[ext_resource type="Script" uid="uid://k1htvoiqr2p8" path="res://area_2d_2.gd" id="6_7upy8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7upy8"]
+size = Vector2(322, 217)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed20i"]
+size = Vector2(118, 124.77704)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2154.0
+offset_bottom = 1611.0
+texture = ExtResource("1_v6up3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(851.7434, 799.6145)
+scale = Vector2(0.3847586, 0.32173657)
+texture = ExtResource("2_bk6nd")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D4"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D4/Area2D2"]
+position = Vector2(-260, -181.5)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(532.5, 526.5271)
+scale = Vector2(0.58055556, 0.53333336)
+texture = ExtResource("2_bk6nd")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D2"]
+position = Vector2(-260, -181.5)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(790, 603.5271)
+scale = Vector2(0.58384264, 0.40462965)
+texture = ExtResource("2_bk6nd")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D2"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/Area2D2"]
+position = Vector2(-260, -181.5)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(585.4942, 812.60486)
+scale = Vector2(0.39725432, 0.310679)
+texture = ExtResource("2_bk6nd")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D3"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/Area2D2"]
+position = Vector2(-260, -181.5)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[node name="broom" type="Sprite2D" parent="."]
+position = Vector2(1364, 720.5271)
+scale = Vector2(0.021236066, 0.056563847)
+texture = ExtResource("3_ed20i")
+script = ExtResource("4_7upy8")
+
+[node name="Button" type="Button" parent="broom"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2966.6523
+offset_top = -3924.7676
+offset_right = -3075.6172
+offset_bottom = -4011.874
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="broom"]
+position = Vector2(-47183.875, -5834.1147)
+scale = Vector2(47.0897, 17.679136)
+script = ExtResource("3_jjaou")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="broom/Area2D"]
+position = Vector2(995.9999, 493.86142)
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_ed20i")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(1102.6067, 538.26355)
+scale = Vector2(0.89107436, 0.6070198)
+texture = ExtResource("2_bk6nd")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D5"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/Area2D2"]
+position = Vector2(-260, -181.5)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[connection signal="area_entered" from="Sprite2D4/Area2D2" to="Sprite2D4/Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="Sprite2D/Area2D2" to="Sprite2D/Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="Sprite2D2/Area2D2" to="Sprite2D2/Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="Sprite2D3/Area2D2" to="Sprite2D3/Area2D2" method="_on_area_entered"]
+[connection signal="button_down" from="broom/Button" to="broom" method="_on_button_button_down"]
+[connection signal="button_up" from="broom/Button" to="broom" method="_on_button_button_up"]
+[connection signal="area_entered" from="broom/Area2D" to="broom/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="broom/Area2D" to="broom/Area2D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="broom/Area2D" to="broom/Area2D" method="_on_body_shape_entered"]
+[connection signal="area_entered" from="Sprite2D5/Area2D2" to="broom" method="_on_area_2d_2_area_entered"]
+[connection signal="area_entered" from="Sprite2D5/Area2D2" to="broom/Area2D" method="_on_area_2d_2_area_entered"]
+[connection signal="area_entered" from="Sprite2D5/Area2D2" to="Sprite2D5/Area2D2" method="_on_area_entered"]

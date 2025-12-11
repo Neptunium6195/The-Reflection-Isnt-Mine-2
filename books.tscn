@@ -1,0 +1,111 @@
+[gd_scene load_steps=9 format=3 uid="uid://rut3dw5t8qgc"]
+
+[ext_resource type="Texture2D" uid="uid://lxyqcggmp8pa" path="res://Assets/book.jpg" id="1_drp12"]
+[ext_resource type="Texture2D" uid="uid://bpsykbavxktq" path="res://Assets/book1.jpg" id="2_rv1at"]
+[ext_resource type="Script" uid="uid://yp3w2muikvqp" path="res://broom.gd" id="3_n7s3d"]
+[ext_resource type="Script" uid="uid://besjff72cd7qu" path="res://area_2d.gd" id="4_863wg"]
+[ext_resource type="Script" uid="uid://k1htvoiqr2p8" path="res://area_2d_2.gd" id="5_rv1at"]
+[ext_resource type="Script" uid="uid://guku43cdk8sb" path="res://collision_shape_2d.gd" id="6_n7s3d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8hb3"]
+size = Vector2(72, 18.74459)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7s3d"]
+size = Vector2(243.9939, 71.37677)
+
+[node name="Books" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2172.0
+offset_bottom = 1622.0
+texture = ExtResource("1_drp12")
+
+[node name="broom" type="Sprite2D" parent="."]
+position = Vector2(1597, 542)
+scale = Vector2(0.54849696, 0.479193)
+texture = ExtResource("2_rv1at")
+script = ExtResource("3_n7s3d")
+
+[node name="Area2D" type="Area2D" parent="broom"]
+position = Vector2(-47183.875, -5834.1147)
+scale = Vector2(47.0897, 17.679136)
+script = ExtResource("4_863wg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="broom/Area2D"]
+position = Vector2(1002.0076, 348.59122)
+scale = Vector2(0.038716815, 0.4471064)
+shape = SubResource("RectangleShape2D_d8hb3")
+
+[node name="Button" type="Button" parent="broom"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -65.63379
+offset_top = -394.4131
+offset_right = -66.36597
+offset_bottom = -388.1527
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(701.58154, 905.8892)
+scale = Vector2(0.44581506, 0.51181036)
+script = ExtResource("5_rv1at")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(280.4535, -1060.2043)
+scale = Vector2(1.0000001, 1)
+shape = SubResource("RectangleShape2D_n7s3d")
+
+[node name="broom2" type="Sprite2D" parent="."]
+position = Vector2(1756.9999, 555)
+scale = Vector2(0.54849696, 0.479193)
+texture = ExtResource("2_rv1at")
+script = ExtResource("3_n7s3d")
+
+[node name="Area2D" type="Area2D" parent="broom2"]
+position = Vector2(-47183.875, -5834.1147)
+scale = Vector2(47.0897, 17.679136)
+script = ExtResource("4_863wg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="broom2/Area2D"]
+position = Vector2(1002.0076, 348.59122)
+scale = Vector2(0.038716815, 0.4471064)
+shape = SubResource("RectangleShape2D_d8hb3")
+script = ExtResource("6_n7s3d")
+
+[node name="Button" type="Button" parent="broom2"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.164093
+offset_top = -398.5868
+offset_right = -60.89627
+offset_bottom = -392.32642
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(701.58154, 905.8892)
+scale = Vector2(0.44581506, 0.51181036)
+script = ExtResource("5_rv1at")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(570.6816, -1066.5848)
+scale = Vector2(1.0000001, 1)
+shape = SubResource("RectangleShape2D_n7s3d")
+
+[connection signal="area_entered" from="broom/Area2D" to="broom/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="broom/Area2D" to="broom/Area2D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="broom/Area2D" to="broom/Area2D" method="_on_body_shape_entered"]
+[connection signal="button_down" from="broom/Button" to="broom" method="_on_button_button_down"]
+[connection signal="button_up" from="broom/Button" to="broom" method="_on_button_button_up"]
+[connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="broom2/Area2D" to="broom2/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="broom2/Area2D" to="broom2/Area2D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="broom2/Area2D" to="broom2/Area2D" method="_on_body_shape_entered"]
+[connection signal="button_down" from="broom2/Button" to="broom2" method="_on_button_button_down"]
+[connection signal="button_up" from="broom2/Button" to="broom2" method="_on_button_button_up"]
+[connection signal="area_entered" from="Area2D3" to="Area2D3" method="_on_area_entered"]

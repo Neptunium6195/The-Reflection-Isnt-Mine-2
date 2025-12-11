@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq7igrn46iiu6"]
+
+[ext_resource type="Texture2D" uid="uid://be48348wh831b" path="res://Assets/IMG_0744.PNG" id="1_y7k74"]
+[ext_resource type="Script" uid="uid://02i6utxovaps" path="res://start.gd" id="2_oyqm6"]
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 54.050003
+anchor_bottom = 40.475002
+offset_bottom = -0.00012207031
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_y7k74")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 53.767002
+anchor_bottom = 40.459003
+offset_left = -4.0
+offset_top = -1.0
+offset_right = 8.319824
+offset_bottom = -3.3601074
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "Untitled Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Start"
+script = ExtResource("2_oyqm6")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_pressed"]
