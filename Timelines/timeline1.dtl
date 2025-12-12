@@ -6,4 +6,4 @@ join bea (Neutral) left [animation="Slide From Left"]
 bee1 (neutral): wowoowow
 update bee1 right [animation="Bounce"]
 bea (Happy): hihihi!
-jump
+do Dialogic.handle_next_event("res://sweeping.tscn")

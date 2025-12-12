@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bu286yrshtvir"]
+[gd_scene load_steps=8 format=3 uid="uid://bu286yrshtvir"]
 
 [ext_resource type="Texture2D" uid="uid://bow7dgw111tgw" path="res://Assets/floor.jpeg" id="1_v6up3"]
 [ext_resource type="Texture2D" uid="uid://dmqlulmfcdtqr" path="res://Assets/dust.jpg" id="2_bk6nd"]
 [ext_resource type="Texture2D" uid="uid://b73lx8hjvdmoc" path="res://Assets/broom.jpg" id="3_ed20i"]
-[ext_resource type="Script" uid="uid://besjff72cd7qu" path="res://area_2d.gd" id="3_jjaou"]
 [ext_resource type="Script" uid="uid://yp3w2muikvqp" path="res://broom.gd" id="4_7upy8"]
 [ext_resource type="Script" uid="uid://k1htvoiqr2p8" path="res://area_2d_2.gd" id="6_7upy8"]
 
@@ -98,7 +97,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Area2D" type="Area2D" parent="broom"]
 position = Vector2(-47183.875, -5834.1147)
 scale = Vector2(47.0897, 17.679136)
-script = ExtResource("3_jjaou")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="broom/Area2D"]
 position = Vector2(995.9999, 493.86142)

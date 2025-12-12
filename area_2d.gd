@@ -5,7 +5,6 @@ var placedCorrectly = 0
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
@@ -15,6 +14,7 @@ func _on_area_entered(area: Area2D) -> void:
 	print(placedCorrectly)
 	var texture = load('res://Assets/book2.jpg')
 	get_parent().texture = texture
-	pass
+	if placedCorrectly == 2:
+		get_tree().change_scene_to_file("res://story.tscn")
 
 	

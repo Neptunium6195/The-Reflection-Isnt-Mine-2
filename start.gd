@@ -13,3 +13,6 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	get_tree().change_scene_to_file("res://story.tscn")
+	#Dialogic.start_timeline("res://Timelines/timeline1.dtl")
+	await Dialogic.timeline_ended
+	get_tree().change_scene_to_file("res://sweeping.tscn")
