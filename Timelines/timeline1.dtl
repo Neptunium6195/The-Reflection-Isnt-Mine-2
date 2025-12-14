@@ -1,9 +1,0 @@
-[background arg="res://Assets/IMG_0744.PNG" fade="0.0"]
-join bee1 center
-bee1 (happy!): Hi!
-bee1 (neutral): ELLIA\: blah blah blah
-join bea (Neutral) left [animation="Slide From Left"]
-bee1 (neutral): wowoowow
-update bee1 right [animation="Bounce"]
-bea (Happy): hihihi!
-do Dialogic.handle_next_event("res://sweeping.tscn")

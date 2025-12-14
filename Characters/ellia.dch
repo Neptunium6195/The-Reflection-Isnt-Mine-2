@@ -1,0 +1,76 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0, 0, 0, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "ellia-confused",
+&"description": "",
+&"display_name": "Ellia",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"ellia-confused": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-confused.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"ellia-happy": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"ellia-shocked": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-shocked.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"ellia-sigh": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-sigh.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"ellia-teary": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-teary.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"ellia-worried": {
+"export_overrides": {
+"image": "\"res://Assets/ellia-worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+}
+},
+&"scale": 1.0
+}
