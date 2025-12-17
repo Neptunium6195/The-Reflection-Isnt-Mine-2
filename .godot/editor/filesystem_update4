@@ -1,32 +1,14 @@
-<<<<<<< Updated upstream
 res://Styles/newStyle.tres
-res://sweeping.tscn
-res://sweeping.gd
+res://Timelines/day1a.dtl
+res://Timelines/day1b.dtl
+res://Characters/charles.dch
+res://title.tscn
+res://start.gd
+res://addons/dialogic/Modules/Text/event_text.gd
 res://area_2d_2.gd
-res://story.tscn
-res://Test.tscn
-res://books.tscn
-res://area_2d.gd
-res://books.gd
-res://Characters/ellia.dch
 res://Maid.gd
 res://Timelines/intro1.dtl
 res://title.tscn
-=======
-res://area_2d.gd
-res://area_2d_2.gd
 res://books.gd
-res://Maid.gd
-res://start.gd
 res://sweeping.gd
-res://addons/dialogic/Modules/Text/event_text.gd
-res://Characters/ellia.dch
-res://Styles/newStyle.tres
-res://Timelines/day2.dtl
-res://Timelines/day1a.dtl
-res://Assets/Character Portraits/Reflection.dch
-res://Timelines/day2a.dtl
-res://Timelines/day2b.dtl
-res://books.tscn
-res://Timelines/day2c.dtl
->>>>>>> Stashed changes
+

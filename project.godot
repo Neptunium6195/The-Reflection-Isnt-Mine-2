@@ -22,14 +22,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-<<<<<<< Updated upstream
-"bee1": "res://Characters/bee1.dch",
-"ellia": "res://Characters/ellia.dch"
-}
-directories/dtl_directory={
-"timeline": "res://Timelines/timeline.dtl",
-"timeline1": "res://Timelines/intro1.dtl"
-=======
 "Reflection": "res://Assets/Character Portraits/Reflection.dch",
 "charles": "res://Characters/charles.dch",
 "ellia": "res://Characters/ellia.dch",
@@ -42,7 +34,7 @@ directories/dtl_directory={
 "day2b": "res://Timelines/day2b.dtl",
 "day2c": "res://Timelines/day2c.dtl",
 "intro": "res://Timelines/intro.dtl"
->>>>>>> Stashed changes
+
 }
 layout/style_directory={
 "": "res://Styles/newStyle.tres",
