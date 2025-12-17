@@ -30,6 +30,7 @@ directories/dtl_directory={
 "day1a": "res://Timelines/day1a.dtl",
 "day1b": "res://Timelines/day1b.dtl",
 "intro": "res://Timelines/intro.dtl",
+"intro1": "res://Timelines/intro1.dtl",
 "timeline": "res://Timelines/timeline.dtl"
 }
 layout/style_directory={

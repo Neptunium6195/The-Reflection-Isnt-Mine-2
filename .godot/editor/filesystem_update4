@@ -9,3 +9,8 @@ res://Styles/newStyle.tres
 res://Timelines/day1a.dtl
 res://Timelines/day1b.dtl
 res://Characters/charles.dch
+res://title.tscn
+res://start.gd
+res://addons/dialogic/Modules/Text/event_text.gd
+res://area_2d_2.gd
+res://Maid.gd

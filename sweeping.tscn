@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://bu286yrshtvir"]
+[gd_scene load_steps=11 format=3 uid="uid://bu286yrshtvir"]
 
+[ext_resource type="Script" uid="uid://do7lmpfk7qcke" path="res://sweeping.gd" id="1_t6a35"]
 [ext_resource type="Texture2D" uid="uid://bow7dgw111tgw" path="res://Assets/floor.jpeg" id="1_v6up3"]
 [ext_resource type="Texture2D" uid="uid://dh70jfoq6ps77" path="res://Assets/dust.png" id="2_7upy8"]
 [ext_resource type="Script" uid="uid://yp3w2muikvqp" path="res://broom.gd" id="4_7upy8"]
@@ -15,26 +16,13 @@ size = Vector2(597.1719, 192.4987)
 size = Vector2(12.348141, 37.97705)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_t6a35")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -22.0
 offset_right = 2132.0
 offset_bottom = 1611.0
 texture = ExtResource("1_v6up3")
-
-[node name="Sprite2D6" type="Sprite2D" parent="TextureRect"]
-position = Vector2(1508, 1231)
-scale = Vector2(0.89107436, 0.6070198)
-texture = ExtResource("5_84w2q")
-
-[node name="Area2D2" type="Area2D" parent="TextureRect/Sprite2D6"]
-position = Vector2(292.22412, 300.2597)
-scale = Vector2(1.1222409, 1.6473929)
-script = ExtResource("6_7upy8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/Sprite2D6/Area2D2"]
-position = Vector2(-309.39343, -206.26355)
-shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
 position = Vector2(987, 1147)
@@ -593,7 +581,22 @@ script = ExtResource("6_7upy8")
 position = Vector2(-316.53088, -170.05176)
 shape = SubResource("RectangleShape2D_7upy8")
 
-[connection signal="area_entered" from="TextureRect/Sprite2D6/Area2D2" to="TextureRect/Sprite2D6/Area2D2" method="_on_area_entered"]
+[node name="Sprite2D38" type="Sprite2D" parent="."]
+position = Vector2(1486, 1231)
+scale = Vector2(0.89107436, 0.6070198)
+texture = ExtResource("5_84w2q")
+
+[node name="Area2D2" type="Area2D" parent="Sprite2D38"]
+position = Vector2(292.22412, 300.2597)
+scale = Vector2(1.1222409, 1.6473929)
+script = ExtResource("6_7upy8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D38/Area2D2"]
+position = Vector2(-309.39343, -206.26355)
+shape = SubResource("RectangleShape2D_7upy8")
+
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="area_entered" from="Sprite2D4/Area2D2" to="Sprite2D4/Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Sprite2D/Area2D2" to="Sprite2D/Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Sprite2D2/Area2D2" to="Sprite2D2/Area2D2" method="_on_area_entered"]
@@ -638,3 +641,4 @@ shape = SubResource("RectangleShape2D_7upy8")
 [connection signal="area_entered" from="Sprite2D34/Area2D2" to="Sprite2D34/Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Sprite2D36/Area2D2" to="Sprite2D36/Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Sprite2D35/Area2D2" to="Sprite2D35/Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="Sprite2D38/Area2D2" to="Sprite2D38/Area2D2" method="_on_area_entered"]

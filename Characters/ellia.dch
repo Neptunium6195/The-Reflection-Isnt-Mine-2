@@ -21,54 +21,60 @@
 "export_overrides": {
 "image": "\"res://Assets/ellia-confused.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 },
 "ellia-happy": {
 "export_overrides": {
 "image": "\"res://Assets/ellia-happy.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 },
 "ellia-shocked": {
 "export_overrides": {
 "image": "\"res://Assets/ellia-shocked.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 },
 "ellia-sigh": {
 "export_overrides": {
 "image": "\"res://Assets/ellia-sigh.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 },
 "ellia-teary": {
 "export_overrides": {
 "image": "\"res://Assets/ellia-teary.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 },
 "ellia-worried": {
 "export_overrides": {
 "image": "\"res://Assets/ellia-worried.png\""
 },
+"ignore_char_scale": true,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.5,
+"scale": 0.75,
 "scene": ""
 }
 },
