@@ -1,10 +1,3 @@
-res://Timelines/intro1.dtl
-res://Characters/ellia.dch
-res://Characters/mrs-williams.dch
-res://Timelines/timeline.dtl
-res://Timelines/intro.dtl
-res://Assets/day1a.dtl
-res://story.tscn
 res://Styles/newStyle.tres
 res://Timelines/day1a.dtl
 res://Timelines/day1b.dtl
@@ -14,5 +7,8 @@ res://start.gd
 res://addons/dialogic/Modules/Text/event_text.gd
 res://area_2d_2.gd
 res://Maid.gd
+res://Timelines/intro1.dtl
+res://title.tscn
 res://books.gd
 res://sweeping.gd
+
