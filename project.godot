@@ -22,9 +22,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Reflection": "res://Assets/Reflection.dch",
 "charles": "res://Characters/charles.dch",
 "ellia": "res://Characters/ellia.dch",
+"lady": "res://Characters/lady.dch",
 "mrs-williams": "res://Characters/mrs-williams.dch"
 }
 directories/dtl_directory={
@@ -34,7 +34,8 @@ directories/dtl_directory={
 "day2a": "res://Timelines/day2a.dtl",
 "day2b": "res://Timelines/day2b.dtl",
 "day2c": "res://Timelines/day2c.dtl",
-"elliaCharlesMeet": "res://Timelines/elliaCharlesMeet.dtl",
+"day2d": "res://Timelines/day2d.dtl",
+"day2e": "res://Timelines/day2e.dtl",
 "intro": "res://Timelines/intro.dtl"
 }
 layout/style_directory={

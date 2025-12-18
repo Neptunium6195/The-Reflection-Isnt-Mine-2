@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b73lx8hjvdmoc"
-path="res://.godot/imported/broom.jpg-3c217495b77fd5a2acb4340ed80e61ba.ctex"
+uid="uid://bubchmchcuq2x"
+path="res://.godot/imported/stain-mockup.png-79296c1fb64bc2ce7de5744564f5a39c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/broom.jpg"
-dest_files=["res://.godot/imported/broom.jpg-3c217495b77fd5a2acb4340ed80e61ba.ctex"]
+source_file="res://Assets/stain-mockup.png"
+dest_files=["res://.godot/imported/stain-mockup.png-79296c1fb64bc2ce7de5744564f5a39c.ctex"]
 
 [params]
 
