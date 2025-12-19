@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cmiq21v8pk52u" path="res://Assets/mirror-mockup.png" id="1_u2e8d"]
 [ext_resource type="Texture2D" uid="uid://bubchmchcuq2x" path="res://Assets/stain-mockup.png" id="2_4lme1"]
-[ext_resource type="Script" uid="uid://k1htvoiqr2p8" path="res://area_2d_2.gd" id="3_c0hv2"]
+[ext_resource type="Script" uid="uid://ema5n64yfw1a" path="res://wipe.gd" id="3_55b53"]
 [ext_resource type="Texture2D" uid="uid://dhkp8ectrefy6" path="res://Assets/cloth-mockup.png" id="3_pphqo"]
 [ext_resource type="Script" uid="uid://yp3w2muikvqp" path="res://broom.gd" id="5_c0hv2"]
 
@@ -38,13 +38,15 @@ expand_mode = 4
 stretch_mode = 4
 
 [node name="stain" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(778.00006, 834)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -57,7 +59,8 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain2"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain2/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -70,7 +73,8 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain3"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain3/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -83,7 +87,8 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain4"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain4/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -96,7 +101,7 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain5"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain5/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -109,7 +114,7 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain6"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain6/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -122,23 +127,24 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain7"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain7/Area2D"]
 position = Vector2(-0.00020074844, 0)
 shape = SubResource("CircleShape2D_pphqo")
 
 [node name="stain8" type="Sprite2D" parent="."]
-position = Vector2(1031, 1247)
+position = Vector2(1114, 1232)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain8"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain8/Area2D"]
-position = Vector2(-0.00020074844, 0)
+position = Vector2(-20.000214, 20)
 shape = SubResource("CircleShape2D_pphqo")
 
 [node name="stain9" type="Sprite2D" parent="."]
@@ -148,7 +154,8 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain9"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain9/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -160,8 +167,9 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain10"]
-position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+position = Vector2(27, -36.667)
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain10/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -174,7 +182,8 @@ texture = ExtResource("2_4lme1")
 
 [node name="Area2D" type="Area2D" parent="stain11"]
 position = Vector2(26.666473, -36.666656)
-script = ExtResource("3_c0hv2")
+disable_mode = 2
+script = ExtResource("3_55b53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stain11/Area2D"]
 position = Vector2(-0.00020074844, 0)
@@ -199,22 +208,23 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_5qams")
 
 [node name="Area2D" type="Area2D" parent="cloth"]
 position = Vector2(-35.71428, -149.60632)
+disable_mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="cloth/Area2D"]
 position = Vector2(-1.2755661, -4.5776367e-05)
 shape = SubResource("RectangleShape2D_1cbr8")
 
 [connection signal="area_entered" from="stain/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain2/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain3/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain4/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain5/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain6/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain7/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain8/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain9/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain10/Area2D" to="stain/Area2D" method="_on_area_entered"]
-[connection signal="area_entered" from="stain11/Area2D" to="stain/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain2/Area2D" to="stain2/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain3/Area2D" to="stain3/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain4/Area2D" to="stain4/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain5/Area2D" to="stain5/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain6/Area2D" to="stain6/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain7/Area2D" to="stain7/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain8/Area2D" to="stain8/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain9/Area2D" to="stain9/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain10/Area2D" to="stain10/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain11/Area2D" to="stain11/Area2D" method="_on_area_entered"]
 [connection signal="button_down" from="cloth/Button" to="cloth" method="_on_button_button_down"]
 [connection signal="button_up" from="cloth/Button" to="cloth" method="_on_button_button_up"]
 [connection signal="area_entered" from="cloth/Area2D" to="stain/Area2D" method="_on_area_entered"]
