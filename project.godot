@@ -37,8 +37,11 @@ directories/dtl_directory={
 "day2c": "res://Timelines/day2c.dtl",
 "day2d": "res://Timelines/day2d.dtl",
 "day2e": "res://Timelines/day2e.dtl",
+<<<<<<< Updated upstream
 "day3a": "res://Timelines/day3a.dtl",
 "day3b": "res://Timelines/day3b.dtl",
+=======
+>>>>>>> Stashed changes
 "elliaCharlesMeet": "res://Timelines/elliaCharlesMeet.dtl",
 "intro": "res://Timelines/intro.dtl"
 }
