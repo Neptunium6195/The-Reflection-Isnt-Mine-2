@@ -22,10 +22,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-<<<<<<< HEAD
-"Reflection": "res://Assets/Reflection.dch",
-=======
->>>>>>> 0c3d8138ee4aa097a82b819dc0a6044b0fece055
 "charles": "res://Characters/charles.dch",
 "ellia": "res://Characters/ellia.dch",
 "lady": "res://Characters/lady.dch",
@@ -40,13 +36,10 @@ directories/dtl_directory={
 "day2b": "res://Timelines/day2b.dtl",
 "day2c": "res://Timelines/day2c.dtl",
 "day2d": "res://Timelines/day2d.dtl",
-<<<<<<< HEAD
-=======
 "day2e": "res://Timelines/day2e.dtl",
 "day3a": "res://Timelines/day3a.dtl",
 "day3b": "res://Timelines/day3b.dtl",
 "elliaCharlesMeet": "res://Timelines/elliaCharlesMeet.dtl",
->>>>>>> 0c3d8138ee4aa097a82b819dc0a6044b0fece055
 "intro": "res://Timelines/intro.dtl"
 }
 layout/style_directory={
@@ -91,12 +84,6 @@ audio/channel_defaults={
 }
 }
 animations/join_default="Fade In Up"
-<<<<<<<Updatedupstreamdirectories/dch_directory={
-"Reflection": "res://Assets/Character Portraits/Reflection.dch",
-"charles": "res://Characters/charles.dch",
-"ellia": "res://Characters/ellia.dch",
-"mrs-williams": "res://Characters/mrs-williams.dch"
-}
 
 [display]
 

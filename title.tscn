@@ -1,13 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://cq7igrn46iiu6"]
 
 [ext_resource type="Texture2D" uid="uid://c0de1a0ovdk82" path="res://Assets/Title Page/title-screen.png" id="1_kpexm"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://vyl4utejgljy" path="res://Assets/Title Page/play-text.png" id="2_3xoar"]
-[ext_resource type="Script" path="res://title.gd" id="2_oyqm6"]
-=======
 [ext_resource type="Texture2D" uid="uid://vyl4utejgljy" path="res://Assets/Title Page/play.png" id="2_3xoar"]
 [ext_resource type="Script" uid="uid://02i6utxovaps" path="res://title.gd" id="2_oyqm6"]
->>>>>>> 0c3d8138ee4aa097a82b819dc0a6044b0fece055
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpexm"]
 content_margin_left = 170.0
