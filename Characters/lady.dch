@@ -1,0 +1,58 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "lady-neutral",
+&"description": "",
+&"display_name": "lady-ludington",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"lady-neutral": {
+"export_overrides": {
+"image": "\"res://Assets/Character Portraits/lady-neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+},
+"lady-silhouette": {
+"export_overrides": {
+"image": "\"res://Assets/Character Portraits/lady-silhouette.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+},
+"lady-smile": {
+"export_overrides": {
+"image": "\"res://Assets/Character Portraits/lady-smile.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+},
+"lady-worried": {
+"export_overrides": {
+"image": "\"res://Assets/Character Portraits/lady-worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.75,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

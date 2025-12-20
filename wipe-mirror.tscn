@@ -1,0 +1,232 @@
+[gd_scene load_steps=14 format=3 uid="uid://csdb15mhngxne"]
+
+[ext_resource type="Script" uid="uid://ctaym6ojcnka6" path="res://wiping.gd" id="1_55b53"]
+[ext_resource type="Texture2D" uid="uid://cmiq21v8pk52u" path="res://Assets/mirror-mockup.png" id="1_u2e8d"]
+[ext_resource type="Texture2D" uid="uid://bubchmchcuq2x" path="res://Assets/stain-mockup.png" id="2_4lme1"]
+[ext_resource type="Script" uid="uid://ema5n64yfw1a" path="res://wipe.gd" id="3_55b53"]
+[ext_resource type="Texture2D" uid="uid://dhkp8ectrefy6" path="res://Assets/cloth-mockup.png" id="3_pphqo"]
+[ext_resource type="Script" uid="uid://br2idb1u868qb" path="res://cloth.gd" id="6_55b53"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pphqo"]
+radius = 246.86937
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0hv2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_55b53"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x5kf5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_apuf0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qams"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cbr8"]
+size = Vector2(237.14294, 184.13391)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_55b53")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 2160.0
+offset_bottom = 2141.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_u2e8d")
+expand_mode = 4
+stretch_mode = 4
+
+[node name="stain" type="Sprite2D" parent="."]
+position = Vector2(778.00006, 834)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain2" type="Sprite2D" parent="."]
+position = Vector2(1167, 725.00006)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain2"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain2/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain3" type="Sprite2D" parent="."]
+position = Vector2(719, 1028)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain3"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain3/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain4" type="Sprite2D" parent="."]
+position = Vector2(1293, 968)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain4"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain4/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain5" type="Sprite2D" parent="."]
+position = Vector2(1006, 947)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain5"]
+position = Vector2(26.666473, -36.666656)
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain5/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain6" type="Sprite2D" parent="."]
+position = Vector2(1242, 1370)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain6"]
+position = Vector2(26.666473, -36.666656)
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain6/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain7" type="Sprite2D" parent="."]
+position = Vector2(939, 1203)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain7"]
+position = Vector2(26.666473, -36.666656)
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain7/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain8" type="Sprite2D" parent="."]
+position = Vector2(1114, 1232)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain8"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain8/Area2D"]
+position = Vector2(-20.000214, 20)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain9" type="Sprite2D" parent="."]
+position = Vector2(765, 1525)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain9"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain9/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain10" type="Sprite2D" parent="."]
+position = Vector2(1091, 1495)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain10"]
+position = Vector2(27, -36.667)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain10/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="stain11" type="Sprite2D" parent="."]
+position = Vector2(1393, 1563)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4lme1")
+
+[node name="Area2D" type="Area2D" parent="stain11"]
+position = Vector2(26.666473, -36.666656)
+disable_mode = 2
+script = ExtResource("3_55b53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stain11/Area2D"]
+position = Vector2(-0.00020074844, 0)
+shape = SubResource("CircleShape2D_pphqo")
+
+[node name="cloth" type="Sprite2D" parent="."]
+position = Vector2(1801, 1279)
+scale = Vector2(0.78400016, 0.7619999)
+texture = ExtResource("3_pphqo")
+script = ExtResource("6_55b53")
+
+[node name="Button" type="Button" parent="cloth"]
+offset_left = -195.15308
+offset_top = -230.97119
+offset_right = 191.32666
+offset_bottom = 233.59583
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c0hv2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_55b53")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x5kf5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_apuf0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5qams")
+
+[node name="Area2D" type="Area2D" parent="cloth"]
+position = Vector2(-35.71428, -149.60632)
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cloth/Area2D"]
+position = Vector2(-1.2755661, -4.5776367e-05)
+shape = SubResource("RectangleShape2D_1cbr8")
+
+[connection signal="area_entered" from="stain/Area2D" to="stain/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain2/Area2D" to="stain2/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain3/Area2D" to="stain3/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain4/Area2D" to="stain4/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain5/Area2D" to="stain5/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain6/Area2D" to="stain6/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain7/Area2D" to="stain7/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain8/Area2D" to="stain8/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain9/Area2D" to="stain9/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain10/Area2D" to="stain10/Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="stain11/Area2D" to="stain11/Area2D" method="_on_area_entered"]
+[connection signal="button_down" from="cloth/Button" to="cloth" method="_on_button_button_down"]
+[connection signal="button_up" from="cloth/Button" to="cloth" method="_on_button_button_up"]
+[connection signal="body_entered" from="cloth/Area2D" to="cloth" method="_on_area_2d_body_entered"]
+[connection signal="body_shape_entered" from="cloth/Area2D" to="." method="_on_area_2d_body_shape_entered"]
