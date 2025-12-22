@@ -22,7 +22,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Reflection": "res://Assets/Reflection.dch",
 "charles": "res://Characters/charles.dch",
 "ellia": "res://Characters/ellia.dch",
 "lady": "res://Characters/lady.dch",
@@ -45,6 +44,7 @@ directories/dtl_directory={
 "day4b": "res://Timelines/day4b.dtl",
 "day4c": "res://Timelines/day4c.dtl",
 "day4d": "res://Timelines/day4d.dtl",
+"day5a": "res://Timelines/day5a.dtl",
 "elliaCharlesMeet": "res://Timelines/elliaCharlesMeet.dtl",
 "intro": "res://Timelines/intro.dtl"
 }
@@ -95,8 +95,9 @@ animations/join_default="Fade In Up"
 
 window/size/viewport_width=2160
 window/size/viewport_height=1620
-window/stretch/mode="viewport"
-window/stretch/aspect="keep_height"
+window/size/initial_position=Vector2i(1, 1)
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
