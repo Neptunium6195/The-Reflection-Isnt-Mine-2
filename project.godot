@@ -32,6 +32,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "bookPuzzle": "res://Timelines/bookPuzzle.dtl",
 "day1a": "res://Timelines/day1a.dtl",
+"day1aa": "res://Timelines/day1aa.dtl",
 "day1b": "res://Timelines/day1b.dtl",
 "day2a": "res://Timelines/day2a.dtl",
 "day2b": "res://Timelines/day2b.dtl",
@@ -46,7 +47,9 @@ directories/dtl_directory={
 "day4d": "res://Timelines/day4d.dtl",
 "day5a": "res://Timelines/day5a.dtl",
 "elliaCharlesMeet": "res://Timelines/elliaCharlesMeet.dtl",
-"intro": "res://Timelines/intro.dtl"
+"end": "res://Timelines/end.dtl",
+"intro": "res://Timelines/intro.dtl",
+"sweeping": "res://Timelines/sweeping.dtl"
 }
 layout/style_directory={
 "": "res://Styles/newStyle.tres",
