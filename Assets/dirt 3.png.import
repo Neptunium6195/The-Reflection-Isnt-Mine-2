@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhkp8ectrefy6"
-path="res://.godot/imported/cloth-mockup.png-b174cda8acc75bd3b4e5d65a5bbdf3b7.ctex"
+uid="uid://vle5obm0icjk"
+path="res://.godot/imported/dirt 3.png-1958cd67a1c97862d11bf604723b6f5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cloth-mockup.png"
-dest_files=["res://.godot/imported/cloth-mockup.png-b174cda8acc75bd3b4e5d65a5bbdf3b7.ctex"]
+source_file="res://Assets/dirt 3.png"
+dest_files=["res://.godot/imported/dirt 3.png-1958cd67a1c97862d11bf604723b6f5f.ctex"]
 
 [params]
 
