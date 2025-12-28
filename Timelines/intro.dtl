@@ -74,27 +74,24 @@ leave mrs-williams
 # thoughts
 [style]
 ellia (confused): It watches? What is that supposed to mean? There [i]are[/i] a lot of portraits here.
-ellia (happy): Thank goodness they gave me clothing. I could not find any of my old uniforms before I came.
-ellia (happy): I shall try it on tomorrow, for it is getting quite late.
-ellia (happy): And I am filled with utter gratitude that they feed me. What considerate masters.
+ellia (happy): I am filled with utter gratitude that they feed me. What considerate masters.
 # creaking
 [wait time="3.0"]
 audio -
 ellia (worried): Such an old manor.
 ellia (worried): The creaking is a bit unsettling…
 ellia (worried): It feels like there’s someone right at my door.
-ellia: zzzz...
 [background fade="0.0"]
 [wait time="3.5"]
 [background fade="0.0"]
 join ellia (shocked) left
-ellia (shocked): charles-
+ellia (shocked): Charles-
 leave ellia
 [background fade="0.0"]
 [wait time="3.5" skippable="true"]
 [background arg="res://Assets/Backgrounds/dream.jpg" fade="0.0"]
 join ellia (shocked) left
-ellia (teary): charles-
+ellia (teary): Charles-
 [wait time="1.0" skippable="true"]
 [background arg="res://Assets/Backgrounds/entrance-hall-wall.png" fade="0.0"]
 ellia (sigh): Oh, it was just a dream...

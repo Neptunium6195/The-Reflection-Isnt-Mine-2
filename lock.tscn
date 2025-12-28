@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3 uid="uid://dthwvt0o3fhox"]
+
+[ext_resource type="Script" path="res://dial.gd" id="1_l5ccq"]
+[ext_resource type="Script" path="res://lock.gd" id="1_rmqde"]
+[ext_resource type="Texture2D" path="res://Assets/Lock Minigame/ellia-bed-box.png" id="2_6aaqj"]
+[ext_resource type="Texture2D" path="res://Assets/Lock Minigame/dial-numbers.png" id="4_ebkbn"]
+[ext_resource type="Texture2D" path="res://Assets/Lock Minigame/box-overlay.png" id="5_d4h6p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p554e"]
+size = Vector2(89.5, 109)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o2523"]
+size = Vector2(72, 113.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ocv6b"]
+size = Vector2(86, 111.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1h8oy"]
+size = Vector2(86.5, 119.5)
+
+[node name="lock" type="Node2D"]
+script = ExtResource("1_rmqde")
+
+[node name="overlay" type="Sprite2D" parent="."]
+visible = false
+z_index = 10
+position = Vector2(1080, 810)
+texture = ExtResource("5_d4h6p")
+
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_6aaqj")
+
+[node name="dial1" type="Node2D" parent="."]
+position = Vector2(847, 808)
+
+[node name="Sprite2D" type="Sprite2D" parent="dial1"]
+position = Vector2(39, 556)
+texture = ExtResource("4_ebkbn")
+
+[node name="Area2D" type="Area2D" parent="dial1"]
+position = Vector2(-8, -6)
+script = ExtResource("1_l5ccq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dial1/Area2D"]
+position = Vector2(44, 59)
+shape = SubResource("RectangleShape2D_p554e")
+
+[node name="dial2" type="Node2D" parent="."]
+position = Vector2(992, 804)
+
+[node name="Sprite2D" type="Sprite2D" parent="dial2"]
+position = Vector2(44, 561)
+texture = ExtResource("4_ebkbn")
+
+[node name="Area2D" type="Area2D" parent="dial2"]
+position = Vector2(0, 4)
+script = ExtResource("1_l5ccq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dial2/Area2D"]
+position = Vector2(43, 51)
+shape = SubResource("RectangleShape2D_o2523")
+
+[node name="dial3" type="Node2D" parent="."]
+position = Vector2(1140, 823)
+
+[node name="Sprite2D" type="Sprite2D" parent="dial3"]
+position = Vector2(43, 549)
+texture = ExtResource("4_ebkbn")
+
+[node name="Area2D" type="Area2D" parent="dial3"]
+script = ExtResource("1_l5ccq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dial3/Area2D"]
+position = Vector2(44, 42)
+shape = SubResource("RectangleShape2D_ocv6b")
+
+[node name="dial4" type="Node2D" parent="."]
+position = Vector2(1271, 810)
+
+[node name="Sprite2D" type="Sprite2D" parent="dial4"]
+position = Vector2(39, 555)
+texture = ExtResource("4_ebkbn")
+
+[node name="Area2D" type="Area2D" parent="dial4"]
+script = ExtResource("1_l5ccq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dial4/Area2D"]
+position = Vector2(44, 55)
+shape = SubResource("RectangleShape2D_1h8oy")
