@@ -34,7 +34,7 @@ ellia (confused): It is a bit simple to be one, though I am not certain what it 
 join ellia (confused) center
 audio "res://Audio/Clock v3 (x3).mp3"
 # clock bongs nine times?
-audio -
+audio "-"
 [wait time="7.5"]
 ellia (sigh): Oh my, it is already time to tidy the rooms.
 # ludingtons bedroom doors
@@ -49,6 +49,6 @@ ellia (confused): No response... I guess it is empty.
 [wait time="1.0"]
 Meanwhile in the other hallway....
 # cutscene for foggy mirror message
-[background fade="0.0"]
+[background arg="res://Assets/IMG_0744.PNG" fade="0.0"]
 The next day...
 [end_timeline]
