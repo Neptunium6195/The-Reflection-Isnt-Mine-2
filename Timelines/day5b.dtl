@@ -3,9 +3,9 @@
 ellia: Her appearance is mirrored...
 ellia: I suspect she has become an imagia. But I have to be certain.
 # inspect puzzle, click diff from first and second visit
-join ellia (worried) leftmost
+join ellia (worried) center
 ellia: I...
-leave 
+leave ellia
 # imagia mrs newington reaches again
 # ellia takes engraver and stabs mrs newington
 # glass shattering sound
@@ -45,5 +45,5 @@ ellia: 288, 289, 290
 # veil closes
 ellia: So about 4 minutes and 50 seconds.
 ellia: Giving me about 4 minutes and 30 seconds to get out safely...
-That is not very long, but is it even possible? What if I get trapped as well?
+ellia: That is not very long, but is it even possible? What if I get trapped as well?
 ellia: It is perilous but, I would do anything for Charles...
