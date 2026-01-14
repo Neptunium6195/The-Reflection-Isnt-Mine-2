@@ -73,6 +73,7 @@ leave mrs-williams
 [background arg="res://Assets/room.png" fade="0.0"]
 # thoughts
 [style]
+join ellia center
 ellia (confused): It watches? What is that supposed to mean? There [i]are[/i] a lot of portraits here.
 ellia (happy): I am filled with utter gratitude that they feed me. What considerate masters.
 # creaking
@@ -92,7 +93,9 @@ leave ellia
 [wait time="3.5" skippable="true"]
 [background arg="res://Assets/Backgrounds/dream.jpg" fade="0.0"]
 join ellia (shocked) left
+[wait time="1.0" skippable="true"]
 ellia (teary): Charles-
+[background fade="0.0"]
 [wait time="1.0" skippable="true"]
 [background arg="res://Assets/Backgrounds/entrance-hall-wall.png" fade="0.0"]
 ellia (sigh): Oh, it was just a dream...
