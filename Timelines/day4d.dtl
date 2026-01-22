@@ -1,4 +1,5 @@
 # ellia;s room with mirror covered
+[background fade="0.0"]
 ellia: Well, it is finally the end of the day. I do not feel at rest here, but I cannot leave, for it terrifies me more to go outside alone.
 # #feels pocket
 [wait time="3.0"]
@@ -35,4 +36,6 @@ ellia: She would know what to do.
 ellia: I wish Charles had never left.
 ellia: I would have been in the city still, celebrating with him.
 ellia: I feel so utterly alone…
+leave ellia
+[background fade="0.5"]
 [end_timeline]

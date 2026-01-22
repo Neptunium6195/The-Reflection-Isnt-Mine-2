@@ -3,11 +3,11 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Dialogic.start("end")
-	await Dialogic.timeline_ended
+	if Dialogic.VAR.portalEnding == true:
+		Dialogic.start("end")
+		await Dialogic.timeline_ended
 	$TextureRect.visible = true
-	
-	pass # Replace with function body.
+	pass 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
