@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cheacbw5xytce"
-path="res://.godot/imported/ellia-happy.png-b2b49b3cef52e0a04380cca8cbdc9b43.ctex"
+uid="uid://cxonlwj8is80g"
+path="res://.godot/imported/box-overlay.png-525e76fbfe7e7e02571cd49f5d49f8bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ellia-happy.png"
-dest_files=["res://.godot/imported/ellia-happy.png-b2b49b3cef52e0a04380cca8cbdc9b43.ctex"]
+source_file="res://Assets/Lock Minigame/box-overlay.png"
+dest_files=["res://.godot/imported/box-overlay.png-525e76fbfe7e7e02571cd49f5d49f8bd.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cheacbw5xytce"
-path="res://.godot/imported/ellia-happy.png-b2b49b3cef52e0a04380cca8cbdc9b43.ctex"
+uid="uid://dkthe5b1flmy6"
+path="res://.godot/imported/dial-numbers.png-3c1a2e6694fd80960a66bfb7ddaf4706.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ellia-happy.png"
-dest_files=["res://.godot/imported/ellia-happy.png-b2b49b3cef52e0a04380cca8cbdc9b43.ctex"]
+source_file="res://Assets/Lock Minigame/dial-numbers.png"
+dest_files=["res://.godot/imported/dial-numbers.png-3c1a2e6694fd80960a66bfb7ddaf4706.ctex"]
 
 [params]
 
