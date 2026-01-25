@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjgemh5flqt5k"]
+[gd_scene load_steps=11 format=3 uid="uid://cjgemh5flqt5k"]
 
 [ext_resource type="Script" uid="uid://cfg0bnqil6r1u" path="res://dial.gd" id="1_l5ccq"]
 [ext_resource type="Script" uid="uid://r2q4ce7nm6ko" path="res://lock.gd" id="1_rmqde"]
 [ext_resource type="Texture2D" uid="uid://bqvgqdlg0vj1a" path="res://Assets/Lock Minigame/ellia-bed-box.png" id="2_6aaqj"]
 [ext_resource type="Texture2D" uid="uid://dkthe5b1flmy6" path="res://Assets/Lock Minigame/dial-numbers.png" id="4_ebkbn"]
 [ext_resource type="Texture2D" uid="uid://cxonlwj8is80g" path="res://Assets/Lock Minigame/box-overlay.png" id="5_d4h6p"]
+[ext_resource type="AudioStream" uid="uid://c464xrs6ci5pe" path="res://Audio/dial-click.mp3" id="6_6aaqj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p554e"]
 size = Vector2(89.5, 109)
@@ -47,6 +48,9 @@ script = ExtResource("1_l5ccq")
 position = Vector2(44, 59)
 shape = SubResource("RectangleShape2D_p554e")
 
+[node name="click" type="AudioStreamPlayer2D" parent="dial1"]
+stream = ExtResource("6_6aaqj")
+
 [node name="dial2" type="Node2D" parent="."]
 position = Vector2(992, 804)
 
@@ -63,6 +67,9 @@ script = ExtResource("1_l5ccq")
 position = Vector2(43, 51)
 shape = SubResource("RectangleShape2D_o2523")
 
+[node name="click" type="AudioStreamPlayer2D" parent="dial2"]
+stream = ExtResource("6_6aaqj")
+
 [node name="dial3" type="Node2D" parent="."]
 position = Vector2(1140, 823)
 
@@ -78,6 +85,9 @@ script = ExtResource("1_l5ccq")
 position = Vector2(44, 42)
 shape = SubResource("RectangleShape2D_ocv6b")
 
+[node name="click" type="AudioStreamPlayer2D" parent="dial3"]
+stream = ExtResource("6_6aaqj")
+
 [node name="dial4" type="Node2D" parent="."]
 position = Vector2(1271, 810)
 
@@ -92,3 +102,6 @@ script = ExtResource("1_l5ccq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dial4/Area2D"]
 position = Vector2(44, 55)
 shape = SubResource("RectangleShape2D_1h8oy")
+
+[node name="click" type="AudioStreamPlayer2D" parent="dial4"]
+stream = ExtResource("6_6aaqj")

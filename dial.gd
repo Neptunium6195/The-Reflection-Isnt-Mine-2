@@ -3,6 +3,7 @@ extends Area2D
 class_name LockDial
 
 @export var lock_node: Node
+@onready var click_sound := get_parent().get_node("click")
 
 var base_sprite_pos: Vector2
 var current_value := 0
@@ -31,6 +32,7 @@ func _input_event(viewport, event, shape_idx):
 func increment():
 	current_value = (current_value + 1) % 10    # modulus wraps around to 0
 	update_visual()
+	click_sound.play()
 	var lock = get_lock_node()
 	if lock:
 		lock.check_code()
