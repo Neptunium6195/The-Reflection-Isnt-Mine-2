@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bu286yrshtvir"]
+[gd_scene load_steps=14 format=3 uid="uid://bu286yrshtvir"]
 
 [ext_resource type="Script" uid="uid://64iw63t84nme" path="res://sweepingy.gd" id="1_t6a35"]
 [ext_resource type="Texture2D" uid="uid://dh70jfoq6ps77" path="res://Assets/dust.png" id="2_7upy8"]
@@ -9,9 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://grxlshbnvaeg" path="res://Assets/dust3.png" id="5_84w2q"]
 [ext_resource type="Script" uid="uid://k1htvoiqr2p8" path="res://area_2d_2.gd" id="6_7upy8"]
 [ext_resource type="FontFile" uid="uid://dtcglqpf40d34" path="res://Assets/Fonts/Radley-Regular.ttf" id="9_84w2q"]
+[ext_resource type="Texture2D" uid="uid://cn21ny3qnh83e" path="res://Assets/dust5.png" id="9_oqg27"]
+[ext_resource type="Texture2D" uid="uid://b10wtnegak8w7" path="res://Assets/dust4.png" id="10_qc3df"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7upy8"]
-size = Vector2(597.1719, 192.4987)
+size = Vector2(526.85986, 178.24362)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ed20i"]
 size = Vector2(12.348141, 37.97705)
@@ -354,9 +356,9 @@ position = Vector2(-243.51245, -202.46109)
 shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D22" type="Sprite2D" parent="."]
-position = Vector2(1856, 1201)
-scale = Vector2(0.14803918, 0.5103725)
-texture = ExtResource("2_7upy8")
+position = Vector2(1978, 1197.5)
+scale = Vector2(0.3727597, 0.35855854)
+texture = ExtResource("9_oqg27")
 
 [node name="Area2D2" type="Area2D" parent="Sprite2D22"]
 position = Vector2(292.22412, 300.2597)
@@ -364,8 +366,8 @@ scale = Vector2(1.1222409, 1.6473929)
 script = ExtResource("6_7upy8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D22/Area2D2"]
-position = Vector2(-344.66235, -183.45287)
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(-279.51752, -200.03935)
+scale = Vector2(0.99999976, 0.99999994)
 shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D23" type="Sprite2D" parent="."]
@@ -409,7 +411,7 @@ scale = Vector2(1.1222409, 1.6473929)
 script = ExtResource("6_7upy8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D25/Area2D2"]
-position = Vector2(-287.889, -222.26355)
+position = Vector2(-330.99023, -216.26343)
 shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D26" type="Sprite2D" parent="."]
@@ -570,9 +572,9 @@ position = Vector2(-872.0636, 1823.8275)
 shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D35" type="Sprite2D" parent="."]
-position = Vector2(204, 1058)
-scale = Vector2(0.06349232, 0.34795028)
-texture = ExtResource("4_t6a35")
+position = Vector2(192, 1039)
+scale = Vector2(0.13804136, 0.31420887)
+texture = ExtResource("10_qc3df")
 
 [node name="Area2D2" type="Area2D" parent="Sprite2D35"]
 position = Vector2(292.22412, 300.2597)
@@ -580,7 +582,7 @@ scale = Vector2(1.1222409, 1.6473929)
 script = ExtResource("6_7upy8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D35/Area2D2"]
-position = Vector2(-316.53088, -170.05176)
+position = Vector2(-202.29727, -159.08081)
 shape = SubResource("RectangleShape2D_7upy8")
 
 [node name="Sprite2D38" type="Sprite2D" parent="."]
@@ -600,9 +602,9 @@ shape = SubResource("RectangleShape2D_7upy8")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Label" type="Label" parent="."]
-offset_left = 1129.0
+offset_left = 1150.0
 offset_top = 1409.0
-offset_right = 2116.0
+offset_right = 2137.0
 offset_bottom = 1504.0
 theme_override_colors/font_color = Color(0.9234157, 0.85569715, 0.77746606, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
