@@ -3,28 +3,7 @@
 ellia: Hopefully today's list is not as long as yesterday's... I was completely worn out.
 ellia: It was so dark too, as if the sun was hidden by a large blot of ink.
 ellia: I shall find out more about this family and what use Charles has for them.
-# bg change: her reflection smiling back at her
-[background fade="0.0"]
-[wait time="2.5"]
-ellia: What...? I did not smile.
-# bg change: back to normal expression in the mirror
-[background fade="0.0"]
-[wait time="2.5"]
-ellia: Huh. Am I seeing things?
-ellia: I am sure my face did not move. It must be my anxieties.
-# ellia looks away
-update ellia center [mirrored="true"]
-[wait time="1.0"]
-leave ellia
-# bg change to reflection smiling again
-[background fade="0.0"]
-[wait time="2.5"]
-# ellia looks back
-join ellia center
-[wait time="1.5"]
-ellia: What is going on?
-leave ellia
-[background fade="0.1" arg=""]
+[background fade="0.1"]
 Reflection: Your face fits me...
 update ellia (worried) center
 ellia: Hello? Who said that? What is happening?
@@ -33,3 +12,4 @@ leave ellia
 [background fade="0.0"]
 [wait time="2.5"]
 ellia: I don't like this. I should begin my work and clear my mind.
+[end_timeline]
