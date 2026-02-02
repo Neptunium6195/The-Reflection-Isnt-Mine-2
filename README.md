@@ -4,4 +4,4 @@ The Reflection Isn't Mine is a visual novel with interactive mini games that tel
 
 It was made on godot using the dialogic plugin and you can play it here: https://neptune6195.itch.io/the-reflection-isnt-mine-2
 
-! [screenshot](Assets/Screenshot 2025-12-27 at 11.44.27 PM.png)
+![screenshot](Assets/Screenshot 2025-12-27 at 11.44.27 PM.png)
