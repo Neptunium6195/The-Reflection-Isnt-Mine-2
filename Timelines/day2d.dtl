@@ -36,11 +36,11 @@ ellia: There's something else on this page.
 [background fade="0.0"]
 [wait time="2.5"]
 # sigh sound
-audio "-"
-ellia: Only those foolish enough to believe such eccentricities.
+audio -
+ellia (sigh): Only those foolish enough to believe such eccentricities.
 ellia: I doubt Sir Ludington is trapped in a mirror.
-ellia: Of all things, a mirror! What nonsense.
-ellia: Gentleman will say anything to keep a woman in the home. How crude!
+ellia (happy): Of all things, a mirror! What nonsense.
+ellia (worried): Gentleman will say anything to keep a woman in the home. How crude!
 # puts the book back down where it was
 join ellia center
 ellia (sigh): What was I thinking?
@@ -48,8 +48,8 @@ ellia (confused): There is a perfectly sound explanation for Lady Ludington's co
 ellia (sigh): I must polish the windows before evening, or I will not have enough time to properly prepare the bedchamber.
 # goes to polish windows
 # bg change: ellia's room with candle lit
-[background fade="0.0"]
-ellia: I am dreadfully fatigued. Am I to do all these tasks alone?
+[background arg="res://Assets/Backgrounds/library.jpg" fade="0.0"]
+ellia (worried): I am dreadfully fatigued. Am I to do all these tasks alone?
 ellia (worried): There must be another servant here. Though, I have not seen anyone but Mrs. Williams and the lady since my arrival.
 ellia (confused): I wonder if Charles is here at all.
 ellia (sigh): Even the kitchens are empty when I eat. Perhaps the cook takes respite often.
@@ -60,7 +60,7 @@ leave ellia
 # change to a dark screen to show that candle has been blown out
 # boudoir doors/any bg
 [background arg="res://Assets/closeddoor.png" fade="0.3"]
-join ellia
+join ellia center
 ellia (happy): While the lady is taking tea, I believe I can tidy the morning room now.
 # morning room dark
 [background arg="res://Assets/Backgrounds/morning-room.jpg" fade="0.5"]
@@ -102,7 +102,7 @@ ellia: There is a perfectly sound explanation for Lady Ludington’s concerns an
 # #morning room light
 [background fade="0.2"]
 [wait time="0.5"]
-join ellia
+join ellia center
 ellia (sigh): I must polish the windows before evening, or I will not have enough time to properly prepare the bedchamber.
 leave ellia
 [end_timeline]
